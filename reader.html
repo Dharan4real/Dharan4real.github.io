@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Book Viewer</title>
+    <link rel="stylesheet" href="CSS/reader.css">
+</head>
+<body background="classical_books.jpg">
+    <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back
+      </a>
+    
+    <div class="container" style="align-items: center;">
+        <div class="card">
+            <div class="card-header">Dharani's Book Reader</div>
+            <div class="card-body">
+                <h4 class="card-title">Select a book file to view:</h4>
+                <input type="file" id="book-input" accept=".pdf, .epub" class="form-control"><br>
+                <button id="view-button" class="btn">View Book</button>
+            </div>
+        </div>
+    </div>
+    <div id="viewer"></div>
+
+    <script src="JavaScript/reader.js"></script>
+</body>
+</html>

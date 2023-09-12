@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Book Viewer</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+
+<body background="classical_books.jpg">
+    <div class="container">
+        <br>      
+    </div>
+    <div>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">Dharani's Book Reader</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Type your ISBN below</h4>
+                        
+                        <input type="text" class="form-control" id="isbn" placeholder="Enter your ISBN" onkeydown="enterKeyInitialize(event);">
+                        <button class="btn " id="start-reading">Start Reading</button>
+                        <button class="btn" id="auto-turn">Auto-turn</button>
+                        <p class="card-text">Enter the book based on its ISBN-10 code.</p>
+                        <a href="reader.html" class="reader">Open From this Device</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="viewerCanvas"></div>
+
+    <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
+
+    <script src="JavaScript/index.js"></script>
+</body>
+
+</html>
